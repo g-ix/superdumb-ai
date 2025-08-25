@@ -1,0 +1,15 @@
+[project]
+name = "superdumb-ai"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi",
+  "uvicorn[standard]",
+  "pydantic",
+  "httpx",
+  "python-dotenv",
+  "openai>=1.0.0",
+  "tiktoken",
+  "langid",               # simple language detection for i18n routing
+  "numpy",
+]
