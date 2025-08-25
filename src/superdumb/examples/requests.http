@@ -1,0 +1,17 @@
+### Dumb answer
+POST http://localhost:8000/respond
+Content-Type: application/json
+
+{
+  "prompt": "Who discovered gravity?",
+  "level": 7
+}
+
+### Reveal truth
+POST http://localhost:8000/reveal
+Content-Type: application/json
+
+{
+  "prompt": "Who discovered gravity?",
+  "level": 7
+}
