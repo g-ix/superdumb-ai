@@ -1,7 +1,11 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
 [project]
 name = "superdumb-ai"
 version = "0.1.0"
-requires-python = ">=3.10"
+description = "An AI that is always wrong, on purpose."
+authors = [{name="Garry Bamrah", email="gb.garrybamrah@gmail.com"}]
 dependencies = [
   "fastapi",
   "uvicorn[standard]",
@@ -10,6 +14,10 @@ dependencies = [
   "python-dotenv",
   "openai>=1.0.0",
   "tiktoken",
-  "langid",               # simple language detection for i18n routing
+  "langid",
   "numpy",
 ]
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["src"]
